@@ -1,0 +1,13 @@
+<html>
+<head>
+<title>Spreadsheet file list</title>
+</head>
+<body>
+<h1>List of spreadsheets</h1>
+<ul>
+{%- for spreadsheet in spreadsheets -%}
+<li><a href="spreadsheet/{{spreadsheet.id}}/worksheets">{{spreadsheet.title}}</a></li>
+{%- endfor -%}
+</ul>
+</body>
+</html>

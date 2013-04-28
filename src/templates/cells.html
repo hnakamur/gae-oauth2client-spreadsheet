@@ -1,0 +1,13 @@
+<html>
+<head>
+<title>Cell list</title>
+</head>
+<body>
+<h1>Cell list in worksheet</h1>
+<dl>
+{%- for cell in cells -%}
+<dd>{{cell.title}}</dd><dt>{{cell.content}}</dt>
+{%- endfor -%}
+</dl>
+</body>
+</html>

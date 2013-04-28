@@ -4,11 +4,11 @@
   </head>
   <body>
     {% if has_credentials %}
-    <p>Thanks for granting us permission. Please <a href="/about">proceed to the main
+    <p>Thanks for granting us permission. Please <a href="/spreadsheets">proceed to the main
       application</a>.</p>
     {% else %}
     <p><a href="{{ url }}">Grant</a> this application permission to read your
-    Buzz information and it will let you know how many followers you have.</p>
+    google drive file list information and it will let you get cell feeds of the spreadsheet you choose..</p>
     {% endif %}
     <p>You can always <a
       href="https://www.google.com/accounts/b/0/IssuedAuthSubTokens">revoke</a>
