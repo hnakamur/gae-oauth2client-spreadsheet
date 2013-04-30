@@ -3,4 +3,4 @@
 /include
 /lib
 *.pyc
-src/client_secrets.json
+client_secrets.json

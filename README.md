@@ -56,7 +56,7 @@ brew install google-app-engine
 ## run dev server
 
 ```
-dev_app_server.py src
+dev_app_server.py .
 ```
 
 Open http://localhost:8080 in your web browser.
