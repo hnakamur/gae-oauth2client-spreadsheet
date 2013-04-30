@@ -6,7 +6,7 @@
 <h1>Worksheet list in spreadsheet</h1>
 <ul>
 {%- for worksheet in worksheets -%}
-<li><a href="/spreadsheet/{{spreadsheet_key}}/{{worksheet.id}}/cells">{{worksheet.title}}</a></li>
+<li><a href="{{worksheet.id}}/cells">{{worksheet.title}}</a></li>
 {%- endfor -%}
 </ul>
 </body>
