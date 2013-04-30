@@ -89,7 +89,7 @@ class SpreadsheetsHandler(BaseHandler):
       service = build("drive", "v2", http=http)
       fields = "items(id,title,mimeType),nextLink,nextPageToken"
       list = service.files().list(fields=fields).execute(http)
-      spreadsheets = [spreadsheet for spreadsheet in list["spreadsheets"]
+      spreadsheets = [spreadsheet for spreadsheet in list["items"]
         if spreadsheet["mimeType"] == SPREADSHEET_MIMETYPE]
       self.render_response('spreadsheets.html', spreadsheets=spreadsheets)
     except AccessTokenRefreshError:
