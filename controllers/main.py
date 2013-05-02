@@ -62,8 +62,7 @@ decorator = oauth2decorator_from_clientsecrets(
     [
         "https://www.googleapis.com/auth/drive.metadata.readonly",
         "https://spreadsheets.google.com/feeds"
-    ],
-    MISSING_CLIENT_SECRETS_MESSAGE)
+    ])
 
 def getSpreadsheetsClient():
   token = OAuth2BearerToken(decorator.credentials)
